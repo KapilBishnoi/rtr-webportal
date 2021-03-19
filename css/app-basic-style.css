@@ -1,0 +1,24 @@
+.footer{
+    height: 100px;
+}
+@media (max-width: 600px) {
+    .footer{
+        height: 150px;
+    }
+}
+.bcolor{
+  
+  background-image: linear-gradient(white,#ddd,white);
+}
+.nav-width{
+  width: 100%;
+}
+.bwidth{
+  width: 80%;
+  margin: auto;
+}
+@media(max-width: 600px){
+  .bwidth{
+    width: 100%;
+  }
+}
