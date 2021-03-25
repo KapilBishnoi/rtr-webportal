@@ -1,117 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>RRP</title>
-        <meta name="description" content="RRP webportal">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/app-basic-style.css"> 
+        <meta name="description" content="RRP webportal" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/app-basic-style.css" />
+
+        <!-- Styles -->
         <!-- Bootstrap Css-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
         <!-- Font awsome icons -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <!-- Scripts -->
         <!--Bootstrap js-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Angular -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
     </head>
     <body>
-
-
         <div class="bg-light bwidth sticky-top">
             <div class="pt-2 pb-2">
                 <h1 class="text-center display-5 text-success"><b>Header Text</b></h1>
                 <p class="text-muted text-center">Slogan</p>
-            </div>  
+            </div>
             <nav class="navbar navbar-expand-lg navbar-dark pl-3 bg-dark rounded">
                 <a class="navbar-brand fas fa-home" href="#"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                
-                  <div class="collapse navbar-collapse pl-3" id="navbarTogglerDemo02">
+                </button>
+
+                <div class="collapse navbar-collapse pl-3" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item dropdown pl-2">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
-                            Documents
-                          </a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                          </div>
+                        <li class="nav-item dropdown pl-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                Documents
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown pl-2">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
-                            Activities
-                          </a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                          </div>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                                Activities
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown pl-2">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
-                            About us
-                          </a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                          </div>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+                                About us
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
                         </li>
-                      <li class="nav-item pl-2">
-                        <a class="nav-link" href="#">Contact us</a>
-                      </li>
+                        <li class="nav-item pl-2">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
                     </ul>
-                  </div>
+                </div>
             </nav>
-                   
         </div>
 
+        <div class="bcolor mx-auto pt-5 pb-4 bwidth">
+            <div class="card-deck mx-auto">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                </div>
+                            </div>
 
-       <div class="bcolor pl-4 pt-5 pb-4 bwidth">
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-        <p>ABCD</p>
-       </div>
-        
-                    
-             
-                
-                        
-            
-                <div class="bwidth pt-2 pb-lg-5 bg-success text-white">
-                    <footer class="footer pt-5 pl-5">
-                        <p>This is footer</p>
-                        <p>Copyright section</p>
-                    </footer>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success container-fluid">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                </div>
+                            </div>
+
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bwidth pt-2 pb-lg-5 bg-success text-white">
+            <footer class="footer pt-5 pl-5">
+                <p>This is footer</p>
+                <p>Copyright section</p>
+            </footer>
+        </div>
     </body>
 </html>

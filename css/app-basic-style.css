@@ -1,13 +1,15 @@
-.footer{
-    height: 100px;
-}
+
 @media (max-width: 600px) {
     .footer{
         height: 150px;
     }
 }
+@media(max-width: 600px){
+  .bwidth{
+    width: 100%;
+  }
+}
 .bcolor{
-  
   background-image: linear-gradient(white,#ddd,white);
 }
 .nav-width{
@@ -17,8 +19,6 @@
   width: 80%;
   margin: auto;
 }
-@media(max-width: 600px){
-  .bwidth{
-    width: 100%;
-  }
+.footer{
+  height: 100px;
 }
