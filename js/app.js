@@ -1,10 +1,10 @@
 var routerApp = angular.module('routerApp', ['ui.router']);
   
-  routerApp.config(function($stateProvider, $urlRouterProvider) {
+  routerApp.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
+    
+    $urlRouterProvider.otherwise('/home');
       
-      $urlRouterProvider.otherwise('/home');
-      
-      $stateProvider
+    $stateProvider
           
           // HOME STATES AND NESTED VIEWS 
           .state('home', {
@@ -50,6 +50,8 @@ var routerApp = angular.module('routerApp', ['ui.router']);
           .state('contact-us', {
               url: '/contact-us',
               templateUrl: '/html/contact-us.html'
-          })        
-  });
+          })   ;  
+    $locationProvider.html5Mode(true);    
+  
+        });
   
