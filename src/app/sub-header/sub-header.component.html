@@ -5,7 +5,7 @@
 <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse r-sub-header-menu" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-            <a class="nav-link r-color-lightgray active" aria-current="page" href="#">Home</a>
+            <a class="nav-link r-color-lightgray active" aria-current="page" routerLink="/">Home</a>
         </li>
         <li ngbDropdown class="nav-item dropdown">
             <a ngbDropdownToggle class="nav-link dropdown-toggle r-color-lightgray" id="navbarDropdown" role="button"
@@ -15,7 +15,7 @@
             <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" routerLink="/drafts">Drafts</a></li>
                 <li><a class="dropdown-item" routerLink="/articles">Articles</a></li>
-                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li><a class="dropdown-item" routerLink="/faq">FAQs</a></li>
             </ul>
         </li>
         <li ngbDropdown class="nav-item dropdown">
@@ -24,9 +24,9 @@
                 Activities
             </a>
             <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Elections</a></li>
-                <li><a class="dropdown-item" href="#">Meetings</a></li>
-                <li><a class="dropdown-item" href="#">Citizen's Duty Day</a></li>
+                <li><a class="dropdown-item" routerLink="/elections">Elections</a></li>
+                <li><a class="dropdown-item" routerLink="/meetings">Meetings</a></li>
+                <li><a class="dropdown-item" routerLink="/citizen-duty-day">Citizen's Duty Day</a></li>
             </ul>
         </li>
         <li ngbDropdown class="nav-item dropdown">
@@ -35,13 +35,13 @@
                 About Us
             </a>
             <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">The Movement</a></li>
-                <li><a class="dropdown-item" href="#">The Party</a></li>
-                <li><a class="dropdown-item" href="#">The President</a></li>
+                <li><a class="dropdown-item" routerLink="/the-movement">The Movement</a></li>
+                <li><a class="dropdown-item" routerLink="/the-party">The Party</a></li>
+                <li><a class="dropdown-item" routerLink="/the-president">The President</a></li>
             </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link r-color-lightgray" href="#">Contact Us</a>
+            <a class="nav-link r-color-lightgray" routerLink="/contact-us">Contact Us</a>
         </li>
     </ul>
     <span class="navbar-text r-color-lightgray">
