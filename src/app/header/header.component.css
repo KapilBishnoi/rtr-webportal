@@ -1,0 +1,22 @@
+.navbar-main-header {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    background-color: #426da8;
+    padding: 0px;
+}
+.r-main-header {
+    padding: 10px 0px;
+}
+.r-sub-header {
+    width: 100%;
+}
+@media screen and (max-width: 991px) {
+    .navbar-main-header {
+        flex-direction: row;
+    }
+    .r-main-header {
+        width: 100%;
+        text-align: center;
+    }
+}

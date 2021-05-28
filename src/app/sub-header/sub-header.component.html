@@ -1,0 +1,50 @@
+<button class="navbar-toggler r-toggle-btn-width" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse r-sub-header-menu" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link r-color-lightgray active" aria-current="page" href="#">Home</a>
+        </li>
+        <li ngbDropdown class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle r-color-lightgray" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Documents
+            </a>
+            <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="/drafts">Drafts</a></li>
+                <li><a class="dropdown-item" routerLink="/articles">Articles</a></li>
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+            </ul>
+        </li>
+        <li ngbDropdown class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle r-color-lightgray" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Activities
+            </a>
+            <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Elections</a></li>
+                <li><a class="dropdown-item" href="#">Meetings</a></li>
+                <li><a class="dropdown-item" href="#">Citizen's Duty Day</a></li>
+            </ul>
+        </li>
+        <li ngbDropdown class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle r-color-lightgray" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+            </a>
+            <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">The Movement</a></li>
+                <li><a class="dropdown-item" href="#">The Party</a></li>
+                <li><a class="dropdown-item" href="#">The President</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link r-color-lightgray" href="#">Contact Us</a>
+        </li>
+    </ul>
+    <span class="navbar-text r-color-lightgray">
+        Slogan
+    </span>
+</div>
