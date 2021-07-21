@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { DynamicLabelConfigService } from '../services/dynamic-label-config.service';
 
 @Component({
   selector: 'main-header',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dynamicLabelConfigService:DynamicLabelConfigService) {
+
+   }
 
   ngOnInit(): void {
   }

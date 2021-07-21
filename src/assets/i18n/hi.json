@@ -1,0 +1,23 @@
+{
+  "main-header":{
+     "right_to_recall_label" : "राइट टू रिकॉल पार्टी"
+  },
+  "sub-header":{
+    "home_label":"घर",
+    "documents_label":"दस्तावेज़",
+    "drafts_label":"ड्राफ्ट",
+    "articles_label":"सामग्री",
+    "faqs_label":"सामान्य प्रश्न",
+    "activities_label":"गतिविधियों",
+    "meetings_label":"बैठकों",
+    "citizen_label":"नागरिक",
+    "election_label":"चुनाव",
+    "citizensDutyDay_label":"नागरिक कर्तव्य दिवस",
+    "aboutus_label":"हमारे बारे में",
+    "theMovement_label":"आंदोलन",
+    "theParty_label":"पार्टी",
+    "thePresident_label":"अध्यक्ष",
+    "contactus_label":"संपर्क करें",
+    "slogan_label":"नारा"
+  }
+}
