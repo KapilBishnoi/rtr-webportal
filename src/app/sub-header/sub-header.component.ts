@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DynamicLabelConfigService } from '../services/dynamic-label-config.service';
 
 @Component({
   selector: 'sub-header',
@@ -9,7 +10,7 @@ export class SubHeaderComponent implements OnInit {
 
   public isMenuCollapsed = true;
 
-  constructor() { }
+  constructor(private dynamicLabelConfigService:DynamicLabelConfigService) { }
 
   ngOnInit(): void {
   }

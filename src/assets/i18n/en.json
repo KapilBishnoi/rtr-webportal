@@ -1,0 +1,23 @@
+{
+  "main-header":{
+     "right_to_recall_label" : "Right To Recall Party"
+  },
+  "sub-header":{
+    "home_label":"Home",
+    "documents_label":"Documents",
+    "drafts_label":"Drafts",
+    "articles_label":"Articles",
+    "faqs_label":"FAQ",
+    "activities_label":"Activities",
+    "meetings_label":"Meetings",
+    "citizen_label":"Citizen",
+    "election_label":"Elections",
+    "citizensDutyDay_label":"Citizen's Duty Day",
+    "aboutus_label":"About Us",
+    "theMovement_label":"The Movement",
+    "theParty_label":"The Party",
+    "thePresident_label":"The President",
+    "contactus_label":"Contact Us",
+    "slogan_label":"Slogan"
+  }
+}
