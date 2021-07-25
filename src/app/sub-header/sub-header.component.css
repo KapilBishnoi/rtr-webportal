@@ -1,22 +1,30 @@
-.r-toggle-btn-width {
-    width: 55px;
-}
+
+
 .r-sub-header-menu {
     background-color: #5a84bf;
     padding: 0px 75px;
 }
-@media screen and (max-width: 991px) {
-    .r-toggle-btn-width {
-        margin: 0px 0px 10px 40px;
-    }
+ @media screen and (max-width: 991px) {
     .r-sub-header-menu {
         padding: 0px 40px;
+
+    }
+    .r-toggle-btn-width {
+      position: absolute;
+      right: 7px;
+      top: 53px;
+      margin: 0 auto;
+    }
+
+    .homebtn-r-aligment{
+      position: absolute;
+      left: 7px;
+      top: 53px;
+      margin: 0 auto;
     }
 }
 @media screen and (max-width: 575px) {
-    .r-toggle-btn-width {
-        margin-left: 15px;
-    }
+
     .r-sub-header-menu {
         padding: 0px 15px;
     }
